@@ -23,6 +23,6 @@ elseif(${FLAG} STREQUAL "2") # Reusing Precompile Headers
     # should not cause problems if configured multiple times
     target_precompile_headers(main REUSE_FROM add)
 
-    get_target_property(var main PRECOMPILE_HEADERS_REUSE_FROM)
+    get_target_property(var main PRECOMPILE_HEADERS_REUSE_FROM)   #glier note: 和set_target_property对应,这个命令很实用,建议多学习
     message("var: ${var}") # var: add
 endif()
